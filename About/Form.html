@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+</head>
+<body>
+      <div>
+        <div class="image2">
+          <img src="image2.png" width="150" height="100">
+        </div>
+      </div>
+    <h2>Application Form</h2>
+    <h3>Fill in your details</h3>
+
+    <form action="/signup" method="post">
+      <div class="form row">
+        <div class="labelinput-div">
+            <label class="label" for="FirstName">First Name</label><br>
+            <input class="input-div" type="text" placeholder="Enter first name">
+        </div>  
+      </div>
+
+      <div class="labelinput-div">
+        <label class="label" for="Last Name">Last Name</label><br>
+        <input class="input-div" type="text" placeholder="Enter last name">
+      </div>
+
+      <div class="form row">
+        <div class="labelinput-div">
+          <label class="label"> 
+            Gender
+            <br>
+          <select class="input-div" id="Gender" name="gender">
+            <option value disabled selected>Select gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+
+        <div class="form row">
+          <label class="label" for="dob">Date of birth</label>
+          <br>
+          <input class="input div" type="date" id="dob"  name="dob">
+          </div>
+
+          <div class="form row">
+            <label class="label">Email address</label>
+            <br>
+            <input class="input-div" type="text" placeholder="Enter email address">
+            </div>
+        
+            <div class="form row">
+              <label class="label" for="Education">Educational level</label>
+              <br>
+              <select class="input-div" id="education" name="Education">
+             <option value disabled selected>Select level of education</option>
+            <option value="Bsc">Bsc</option>
+            <option value="Msc">Msc</option>
+            <option value="Diploma">Diploma</option>
+            <option value="placeholder">Doctorate degree(PHD)</option>
+            <option value="High School">High School/Secondary School</option>
+            <option value="Junior School">Junior/Middle School</option>
+            <option value="Post Graduate" Post Graduate</option>
+          </select>
+            </div>
+
+            <div class="form row">
+              <label class="label" for="Country">Country</label>
+              <br>
+              <select class="input-div" id="country" name="Country">
+             <option value="select your country">Select your Country </option>
+            <option value="Algeria">Algeria</option>
+            <option value="Angola">Angola</option>
+            <option value="China">China</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Netherland">Netherland</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United State">United state og America</option>
+            <!--continue adding more countries-->
+          </select>
+            </div>
+            
+          <div class="form row">
+            <label class="label">State/City of Residence</label><br>
+          <input class="input-div" type="text" placeholder="Enter state of residence">
+            </div>
+
+            <div class="form row">
+              <label class="label" for="Employment Status">Employment Status</label><br>
+            <select class="input-div" id="Employment" name="Employment">
+              <option value disabled selected>Select employment status</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Self-employed">Self employed</option>
+            </select>
+            </div>
+
+            <div class="form row">
+          <label class="label">Phone Number</label><br>
+          <input class="input-div" type="text" placeholder="phone number">
+            </div>
+
+          <div class="form row">
+          <label class="Choose school">Choose School</label><br>
+          <select class="input-div" id="school" name="school">
+            <option value disabled selected>select school</option>
+            <option>School of Engineering</option>
+            <option>School of Product</option>
+            <option>School of Data</option>
+            <option>School of Creative economy</option>
+            <option>School of Business</option>
+        </select>
+      </div>
+
+      <div class="form row">
+        <label class="label">Choose course of Study</label><br>
+        <select class="input-div" id name="course of study">
+          <option value disabled selected>select course</option>
+          <option>school of Data science</option>
+          <option>school of Product marketing</option>
+          <option>school of Cloud Engineering</option>
+        </select>
+          </div>
+      
+        <div class="form row">
+            <div class="labelinput-div">
+            <label class="label" for="school">How did you hear about us</label>
+          <select class="input-div" id="school" name="school">
+            <option value disabled selected>Select channel</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Facebook">Facebook</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Friend">Friend</option>
+        </select>
+
+          <div class="form row">
+            <label class="label" for="Scholarship">Scholarship/Discount Code(Optional)</label>
+            <br>
+            <input class="input-div" type="text" placeholder="Scholarship/Student ID/Discount Code">
+          </div>
+      
+            <input type="checkbox" value="terms">
+            By clicking continue, I agree to <a href="/terms">terms of use</a> and acknowlegde that I have read the <a href="/privacy">privacy policy</a>
+          </label>
+        </p>
+        <p>
+          <button>Proceed</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+</body>
+</html>

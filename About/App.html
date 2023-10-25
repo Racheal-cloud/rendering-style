@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <h2>Fill in your details</h2>
+
+    <form action="/signup" method="post">
+      <div class="form row">
+        <div class="label input-div">
+            <label class="label" for="FirstName">First Name</label><br>
+            <input class="input-div" type="text" placeholder="Enter first name">
+        </div>
+      </div>
+      <div class="sec two">
+        <label class="label" for="Last Name">Last Name</label><br>
+        <input class="input-div" type="text" placeholder="Enter last name">
+      </div>
+        <p>
+          <label>Gender</label><br>
+          <select>
+            <option>male</option>
+            <option>female</option>
+          </select>
+        </p>
+        <p>
+           <label>Date of birth</label><br>
+            <input type="search" name="Date of birth">
+        </p>
+        <p>
+            <label>Email Address</label><br>
+          <input type="email" name="email_address" required>
+        </p>
+        <p>
+          <label>Education level</label><br>
+          <select>
+            <option>Bsc</option>
+            <option>Msc</option>
+            <option>Diploma</option>
+            <option>Doctorate</option>
+            <option>High School/Secondary School</option>
+            <option>Undergraduate</option>
+            <option>Post Graduate</option>
+          </select>
+        </p>
+            <label>Country</label><br>
+          <input type="text" name="Countryofresidence">
+        </p>
+        <p>
+            <label>State of Residence</label><br>
+          <input type="text" name="stateofresidence">
+        </p>
+        <p>
+            <label>Employment Status</label><br>
+            <select>
+                <option>Employed</option>
+                <option>Unemployed</option>
+                <option>Self-employed</option>
+            </select>
+        
+        </p>
+        <p>
+          <label>Phone Number</label><br>
+          <input type="tel" name="phone">
+        </p>
+        <p>
+          <label>Choose School</label><br>
+          <select>
+            <option>School of Engineering</option>
+            <option>School of Product</option>
+            <option>School of Data</option>
+            <option>School of Creative economy</option>
+            <option>School of Business</option>
+        </select>
+        </p>
+        <p>
+            <label>Course of Study</label><br>
+            <input type="text" name="course_of_study">
+        </p>
+        <p>
+          <label>How did you hear about us</label><br>
+          <select>
+            <option>Twitter</option>
+            <option>facebook</option>
+            <option>linkedin</option>
+            <option>Youtube</option>
+            <option>Friend</option>
+            <option>Whatsapp</option>
+            <option>Instagram</option>
+            <option>Billboard</option>
+        </select>
+        </p>
+        <p>
+            <label>Scholarship/Discount Code</label><br>
+            <input type="text" name="Scholarship_code">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms">
+            By clicking continue, I agree to <a href="/terms">terms of use</a> and acknowlegde that I have read the <a href="/privacy">privacy policy</a>
+          </label>
+        </p>
+        <p>
+          <button>Proceed</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+</body>
+</html>
